@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    margin-top: 10px;
+}
+
+.container{
+  
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    justify-content: space-between;
+   
+   
+}
+
+#navbar{
+    order: -1;
+    margin: 0;
+    padding: 10px 0px;
+    border-right: solid 2px rgb(80, 78, 78);
+    text-align: center;
+ 
+}
+#navbar header{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+#navbar ol{
+    padding: 10px 0px;
+    margin: 0;
+    overflow-y: scroll;
+    
+}
+#navbar ol li{
+    padding: 10px 0px 3px;
+    margin: 0;
+    border-top: 1px solid black;
+    list-style: none;
+    height: 30px;
+    width: 300px; 
+}
+#navbar ol li:last-child{
+    border-bottom: 1px solid black;
+}
+#navbar a{
+    text-decoration: none;
+    color: #000;
+}
+#navbar ol li:nth-child(even){
+    
+    background-color: rgb(180, 177, 177);
+}
+
+main{
+    padding-left: 15px;
+    padding-top: 5px;
+    flex-shrink: 4;
+    
+}
+
+main section header{
+    font-size: 25px;
+    font-weight: 700;
+}
+main section p{
+    margin: 5px;
+    padding: 7px;
+    line-height: 1.5;
+}
+pre{ 
+    margin: 0px 10px;
+    border-radius: 2px;
+    background-color: rgb(180, 177, 177);
+    white-space: pre-wrap;
+}
+
+ .inside-code{
+    margin: 0 auto;
+    padding: 0;
+    white-space: pre-line;
+    border-radius: 5px;
+    background-color: rgb(180, 177, 177); 
+   
+}
+
+p code, li code{
+    margin: 0px 2px;
+    background-color: rgb(180, 177, 177);
+    padding: 3px;
+    border-radius: 2px;
+    
+}
+li span{
+    font-weight: bold;
+}
+.inside-code code{
+    margin-top: 3px; 
+     white-space: pre-line;
+     background-color: gray;
+}
+.reference{
+    margin-bottom: 10px;
+}
+.reference a{
+  
+    color: rgb(55, 55, 224);
+    cursor: pointer;
+}
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column;
+    }
+   
+    #navbar ol li{
+        
+        width: 100%; 
+    }
+    #navbar{
+        height: 200px;
+        overflow-x:scroll;
+    }
+}
