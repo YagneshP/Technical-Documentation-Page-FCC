@@ -32,7 +32,7 @@ li{
     padding: 10px 0px;
     border-right: solid 2px rgb(80, 78, 78);
     text-align: center;
- 
+     overflow-x: scroll;
 }
 #navbar header{
     font-size: 30px;
@@ -42,7 +42,7 @@ li{
 #navbar ol{
     padding: 10px 0px;
     margin: 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     
 }
 #navbar ol li{
@@ -66,10 +66,10 @@ li{
 }
 
 main{
-    padding-left: 15px;
-    padding-top: 5px;
+    /* padding-left: 15px;
+    padding-top: 5px; */
     flex-shrink: 4;
-    
+    padding:15px
 }
 
 main section header{
@@ -131,6 +131,8 @@ li span{
     }
     #navbar{
         height: 200px;
+        border-right: hidden;
+        border-bottom: solid 2px rgb(80, 78, 78);
         overflow-x:scroll;
     }
 }
